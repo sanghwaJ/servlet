@@ -14,7 +14,7 @@ import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
 
-@WebServlet(name = "frontControllerServletV2", urlPatterns = "/front-controller/v2/*") // asterisk를 쓰면 v1 하위 폴더의 어떠한 것이 호출이 와도 아래의 servlet이 무조건 호출됨
+@WebServlet(name = "frontControllerServletV2", urlPatterns = "/front-controller/v2/*")
 public class FrontControllerServletV2 extends HttpServlet {
 
     private Map<String, ControllerV2> controllerMap = new HashMap<>();
